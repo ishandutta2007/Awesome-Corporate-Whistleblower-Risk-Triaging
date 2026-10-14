@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Corporate-Whistleblower-Risk-Triaging/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Corporate-Whistleblower-Risk-Triaging?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Corporate-Whistleblower-Risk-Triaging/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Corporate-Whistleblower-Risk-Triaging?style=social" alt="GitHub_Stars" /></a>
   <a href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Corporate-Whistleblower-Risk-Triaging/blob/main/README.md#how-to-contribute"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -63,9 +63,9 @@ The table below lists leading commercial SaaS and hosted platforms for whistlebl
 
 ## 💻 Open-Source GitHub Projects
 
-The following self-hostable open-source repositories provide transparent, auditable, and vendor-independent whistleblowing architectures—ranging from complete multi-tenant reporting platforms to cryptographic vaults and dead-man-switch mechanisms. Repositories are sorted descending by GitHub star count. ⭐
+The following self-hostable open-source repositories provide transparent, auditable, and vendor-independent whistleblowing architectures—ranging from complete multi-tenant reporting platforms to cryptographic vaults and dead-man-switch mechanisms. Repositories are sorted descending by GitHub Stars_Count. ⭐
 
-| Project 📦 | Stars ⭐ | License ⚖️ | Primary Stack 🛠️ | Highlights & Architecture 🔍 |
+| Project 📦 | GitHub_Stars ⭐ | License ⚖️ | Primary Stack 🛠️ | Highlights & Architecture 🔍 |
 | :--- | :--- | :--- | :--- | :--- |
 | **[freedomofpress/securedrop](https://github.com/freedomofpress/securedrop)** | [![Stars](https://img.shields.io/github/stars/freedomofpress/securedrop?style=social&color=white)](https://github.com/freedomofpress/securedrop/stargazers) | GPL-3.0 | Python, Tor, Linux | **The gold standard in anonymous submission infrastructure.** Originally authored by Aaron Swartz, maintained by Freedom of the Press Foundation. Employs air-gapped journalist viewing stations, Tor hidden services, and GPG end-to-end encryption. 🛡️ |
 | **[globaleaks/globaleaks-whistleblowing-software](https://github.com/globaleaks/globaleaks-whistleblowing-software)** | [![Stars](https://img.shields.io/github/stars/globaleaks/globaleaks-whistleblowing-software?style=social&color=white)](https://github.com/globaleaks/globaleaks-whistleblowing-software/stargazers) | AGPL-3.0 | Python, Angular, Docker | **Leading corporate and governmental whistleblowing framework.** Recognized as a Digital Public Good, deployed across 30,000+ public and private entities (including ANAC). Features ISO 37002 compliance, Tor onion routing, no IP logging, 70+ languages, and full case triage. 🏛️ |
@@ -114,7 +114,7 @@ Every contribution and bit of support makes a tremendous difference! 🙏✨
 1. Fork this repository. 🍴
 2. Add your project or SaaS solution following the established tabular format:
    - **For SaaS**: Name, official link, valuation/scale, specific starting tier price, and concrete free tier / free trial limits.
-   - **For Open-Source**: Name, GitHub repo link, star badge (`style=social&color=white`), license, primary technology stack, and description.
+   - **For Open-Source**: Name, GitHub repo link, Stars_Badge (`style=social&color=white`), license, primary technology stack, and description.
 3. Ensure all links are active and descriptions remain objective and fact-checked. 🔍
 4. Submit a Pull Request with a clear summary of your additions. 🚀
 
