@@ -63,7 +63,7 @@ The table below lists leading commercial SaaS and hosted platforms for whistlebl
 
 ## 💻 Open-Source GitHub Projects
 
-The following self-hostable open-source repositories provide transparent, auditable, and vendor-independent whistleblowing architectures—ranging from complete multi-tenant reporting platforms to cryptographic vaults and dead-man-switch mechanisms. Repositories are sorted descending by GitHub Stars_Count. ⭐
+The following self-hostable open-source repositories provide transparent, auditable, and vendor-independent whistleblowing architectures—ranging from complete multi-tenant reporting platforms to cryptographic vaults and dead-man-switch mechanisms. Repositories are sorted descending by GitHub_Stars_Count. ⭐
 
 | Project 📦 | GitHub_Stars ⭐ | License ⚖️ | Primary Stack 🛠️ | Highlights & Architecture 🔍 |
 | :--- | :--- | :--- | :--- | :--- |
