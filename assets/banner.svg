@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+
+    <!-- Header Text Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="50%" stop-color="#a78bfa" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <!-- Accent Glow Gradient -->
+    <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#8b5cf6" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85" />
+    </linearGradient>
+
+    <!-- Glow Filter for Shield/Nodes -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes pulseBeam {
+        0%, 100% { stroke-opacity: 0.2; stroke-dashoffset: 0; }
+        50% { stroke-opacity: 0.9; stroke-dashoffset: -40; }
+      }
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes floatLag {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(8px); }
+      }
+      @keyframes radarSweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes badgePulse {
+        0%, 100% { transform: scale(1); opacity: 0.9; }
+        50% { transform: scale(1.03); opacity: 1; }
+      }
+      .beam-line {
+        stroke-dasharray: 8 12;
+        animation: pulseBeam 4s ease-in-out infinite;
+      }
+      .floating-node-1 {
+        animation: floatSlow 6s ease-in-out infinite;
+      }
+      .floating-node-2 {
+        animation: floatLag 7s ease-in-out infinite;
+      }
+      .badge-glow {
+        animation: badgePulse 4s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 42px;
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        fill: #94a3b8;
+      }
+      .tag-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #cbd5e1;
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Canvas Background -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="420" rx="16" fill="url(#glow)" />
+
+  <!-- Subtle Cyber Tech Grid Pattern -->
+  <g stroke="#334155" stroke-opacity="0.25" stroke-width="1">
+    <line x1="0" y1="70" x2="1200" y2="70" />
+    <line x1="0" y1="140" x2="1200" y2="140" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="280" x2="1200" y2="280" />
+    <line x1="0" y1="350" x2="1200" y2="350" />
+    <line x1="150" y1="0" x2="150" y2="420" />
+    <line x1="300" y1="0" x2="300" y2="420" />
+    <line x1="450" y1="0" x2="450" y2="420" />
+    <line x1="600" y1="0" x2="600" y2="420" />
+    <line x1="750" y1="0" x2="750" y2="420" />
+    <line x1="900" y1="0" x2="900" y2="420" />
+    <line x1="1050" y1="0" x2="1050" y2="420" />
+  </g>
+
+  <!-- Animated Data Connection Beams (Background Dynamics) -->
+  <g stroke-width="2">
+    <path d="M 80 80 Q 250 30 420 80 T 800 60" fill="none" stroke="#38bdf8" class="beam-line" />
+    <path d="M 1120 340 Q 950 390 780 340 T 400 360" fill="none" stroke="#a78bfa" class="beam-line" style="animation-delay: 2s;" />
+  </g>
+
+  <!-- Left Side Dynamic Graphic: Cryptographic Privacy & Triage Shield -->
+  <g transform="translate(130, 210)" class="floating-node-1">
+    <!-- Outer Shield Halo -->
+    <circle cx="0" cy="0" r="85" fill="#1e293b" fill-opacity="0.4" stroke="#3b82f6" stroke-opacity="0.3" stroke-width="2" />
+    <circle cx="0" cy="0" r="65" fill="#0f172a" stroke="#8b5cf6" stroke-opacity="0.5" stroke-width="2" filter="url(#softGlow)" />
+    
+    <!-- Stylized Shield & Keyhole/Eye -->
+    <path d="M 0 -45 L 38 -25 C 38 22 18 45 0 55 C -18 45 -38 22 -38 -25 Z" fill="#1e1b4b" stroke="#60a5fa" stroke-width="3" />
+    <path d="M 0 -22 C -10 -22 -18 -14 -18 -4 C -18 3 -13 9 -7 11 L -9 26 L 9 26 L 7 11 C 13 9 18 3 18 -4 C 18 -14 10 -22 0 -22 Z" fill="#38bdf8" />
+    <circle cx="0" cy="-6" r="4" fill="#0f172a" />
+    
+    <!-- Triaging Satellite Dots -->
+    <circle cx="-65" cy="-40" r="5" fill="#38bdf8" />
+    <circle cx="65" cy="-40" r="5" fill="#a78bfa" />
+    <circle cx="0" cy="75" r="5" fill="#34d399" />
+  </g>
+
+  <!-- Right Side Dynamic Graphic: Risk Triage Flow Nodes -->
+  <g transform="translate(1070, 210)" class="floating-node-2">
+    <!-- Risk Meter & Nodes -->
+    <circle cx="0" cy="0" r="75" fill="#1e293b" fill-opacity="0.4" stroke="#8b5cf6" stroke-opacity="0.3" stroke-width="2" />
+    <circle cx="0" cy="0" r="50" fill="#0f172a" stroke="#34d399" stroke-opacity="0.5" stroke-width="2" />
+    
+    <!-- Balance Scales / Triaging Funnel -->
+    <path d="M -25 -10 L 25 -10 M 0 -28 L 0 25 M -30 20 L 30 20" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+    <circle cx="-25" cy="5" r="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2" />
+    <circle cx="25" cy="15" r="10" fill="#1e293b" stroke="#10b981" stroke-width="2" />
+  </g>
+
+  <!-- FOREGROUND: Content Card Layer (Ensures 100% Legibility & Visual Clarity) -->
+  <!-- Top Category Pill Badge -->
+  <g transform="translate(600, 75)" class="badge-glow">
+    <rect x="-190" y="-18" width="380" height="36" rx="18" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" />
+    <text x="0" y="5" text-anchor="middle" class="tag-text" fill="#38bdf8">
+      🛡️ ENTERPRISE COMPLIANCE &amp; ETHICS DIRECTORY
+    </text>
+  </g>
+
+  <!-- Central Title & Subtitle in Clear Foreground -->
+  <text x="600" y="165" text-anchor="middle" class="title-text" fill="url(#textGrad)">
+    Awesome Corporate Whistleblower
+  </text>
+  <text x="600" y="215" text-anchor="middle" class="title-text" fill="#f8fafc" font-size="34">
+    &amp; Risk Triaging
+  </text>
+
+  <text x="600" y="265" text-anchor="middle" class="subtitle-text">
+    Curated SaaS Platforms, Zero-Knowledge Ingestion &amp; Open-Source Case Management
+  </text>
+
+  <!-- Bottom Dynamic Feature Capability Pills (Always in Foreground) -->
+  <g transform="translate(600, 340)">
+    <!-- Pill 1: Anonymous Intake -->
+    <g transform="translate(-320, 0)">
+      <rect x="-85" y="-18" width="170" height="36" rx="18" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.2" />
+      <text x="0" y="5" text-anchor="middle" class="tag-text">🔒 Anonymous Intake</text>
+    </g>
+
+    <!-- Pill 2: Case Triage -->
+    <g transform="translate(-105, 0)">
+      <rect x="-85" y="-18" width="170" height="36" rx="18" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1.2" />
+      <text x="0" y="5" text-anchor="middle" class="tag-text">⚖️ Conflict-Free Triage</text>
+    </g>
+
+    <!-- Pill 3: ISO 37002 & EU Directive -->
+    <g transform="translate(105, 0)">
+      <rect x="-95" y="-18" width="190" height="36" rx="18" fill="url(#cardGrad)" stroke="#a78bfa" stroke-width="1.2" />
+      <text x="0" y="5" text-anchor="middle" class="tag-text">📜 EU 2019/1937 &amp; GDPR</text>
+    </g>
+
+    <!-- Pill 4: Open Source & E2EE -->
+    <g transform="translate(320, 0)">
+      <rect x="-85" y="-18" width="170" height="36" rx="18" fill="url(#cardGrad)" stroke="#34d399" stroke-width="1.2" />
+      <text x="0" y="5" text-anchor="middle" class="tag-text">🌐 Tor &amp; Self-Hosted</text>
+    </g>
+  </g>
+
+  <!-- Border Accent Outline -->
+  <rect x="1" y="1" width="1198" height="418" rx="15" fill="none" stroke="#475569" stroke-opacity="0.3" stroke-width="2" />
+</svg>
